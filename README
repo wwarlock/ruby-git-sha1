@@ -1,0 +1,20 @@
+Ruby script for sha1 value count as it git does
+Written just for fun on conversation http://juick.com/dmz/1374908 (Russian)
+
+If you commit some files long time ago.
+After that you or your teammates renamed it some times.
+And now you forgot original file name, but still need to find a blob from some file.
+
+Use the next command:
+$ git-sha.rb filename1 filename2 ... filenameN
+
+Output:
+sha1_1
+sha1_2
+...
+sha1_N
+
+After that you can try:
+$ git show sha1_N
+
+And you should see the blob source.
